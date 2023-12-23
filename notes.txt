@@ -1,0 +1,12 @@
+Learning Goals : 
+- dotnet CLI
+- API Controllers and Endpoints .NET
+- Entity Framework
+- API Project structure
+- Configuration and Environment variables
+- Angular refresher
+- Dependency Injection in both .NET and Angular
+
+Angular :
+- The constructor is normally considered too early to go and fetch data from an API.
+So that's why I implement a life cycle event ( interface OnInit ) inside the component.
