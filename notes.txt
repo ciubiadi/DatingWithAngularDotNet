@@ -6,6 +6,9 @@ Learning Goals :
 - Configuration and Environment variables
 - Angular refresher
 - Dependency Injection in both .NET and Angular
+- Using inheritance in C# - DRY
+- Using Data Transfer Objects (DTOs)
+- Using Services in C#
 
 Angular :
 - The constructor is normally considered too early to go and fetch data from an API.
