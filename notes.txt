@@ -1,3 +1,5 @@
+- use Postman
+
 Learning Goals : 
 - dotnet CLI
 - API Controllers and Endpoints .NET
@@ -9,7 +11,28 @@ Learning Goals :
 - Using inheritance in C# - DRY
 - Using Data Transfer Objects (DTOs)
 - Using Services in C#
+- Use Middleware
+- Extension methods - DRY
 
 Angular :
 - The constructor is normally considered too early to go and fetch data from an API.
 So that's why I implement a life cycle event ( interface OnInit ) inside the component.
+
+Authentication : 
+- even if I specified a byte array as the type of the properties PasswordHash and PasswordSalt
+since I am using SQLite, it's Entity framework's job to translate between the binary that
+I'm using in my class and what SQLite understand in thge database
+
+DTO is basically an obhject used to encapsulate some data and send it from one substystem of an 
+application to another. For example the Client is one subsystem and I want to send an object up to
+my API endpoint which would be another subsystem.
+Also, DTO helps to get data from the body of a request. So using Data Transfer Object allows me to
+create a different object and just send back the properties that I'm interested in.
+
+FirstOrDefault() vs SingleOrDefault() : If there is one or more element in the database that matches the query, then it throws an expection.
+
+JWT (JSON Web Tokens) are an industry standard for tokens, they are self-contained (so no session to manage ) and can contain credentials, claims or other information.
+Also JWT is portable, I can use a single token with multiple backends. Since no cookies are required the JWT is mobile friendly. From the performance point of view,
+once a token is issued, there is no need to make a database request to verify a user authentication.
+
+
